@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>MC PLATFORM QUALITY CHECKER</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="container">
+  <header>
+    <h1>MC Platform Quality Checker</h1>
+    <p>Verify your Micro-Credential against the 6 standard criteria.</p>
+  </header>
+
+  <div class="dashboard">
+    <div class="input-panel">
+      <div class="card">
+        <h3>1. Ice-breaking (10%)</h3>
+        <label>Number of Ice-breaking activities:</label>
+        <input type="number" id="iceCount" min="0" value="0">
+      </div>
+
+      <div class="card">
+        <h3>2. Videos (20%)</h3>
+        <label>Number of videos:</label>
+        <input type="number" id="vidCount" min="0" value="0">
+        <label>Total duration (minutes):</label>
+        <input type="number" id="vidDuration" min="0" value="0">
+      </div>
+
+      <div class="card">
+        <h3>3. Interactions (15%)</h3>
+        <label>Number of interaction activities (H5P/Forum):</label>
+        <input type="number" id="interCount" min="0" value="0">
+      </div>
+
+      <div class="card">
+        <h3>4. Self-Practice (15%)</h3>
+        <label>Number of online drills/embedded activities:</label>
+        <input type="number" id="practiceCount" min="0" value="0">
+      </div>
+
+      <div class="card">
+        <h3>5. eNote (20%)</h3>
+        <label>Number of slides/pages in set:</label>
+        <input type="number" id="notePages" min="0" value="0">
+      </div>
+
+      <div class="card">
+        <h3>6. Assessment (20%)</h3>
+        <label>Number of assessments:</label>
+        <input type="number" id="assessCount" min="0" value="0">
+        <label>Total MCQ questions (if any):</label>
+        <input type="number" id="mcqCount" min="0" value="0">
+      </div>
+      
+      <button onclick="calculateScore()" class="btn-calc">Analyze Quality</button>
+    </div>
+
+    <div class="result-panel">
+      <div class="score-box">
+        <span id="overallScore">0/100</span>
+        <p>Overall Quality Score</p>
+      </div>
+      <div id="feedbackList" class="feedback">
+        </div>
+    </div>
+  </div>
+  
+  <footer>
+    <hr>
+    <p>Copyright © 2026 [Catherine N.C.L]. All Rights Reserved.</p>
+    <p class="disclaimer">No part of this application, including code, questions, and graphical assets, may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of the author.</p>
+  </footer>
+</div> 
+
+
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
